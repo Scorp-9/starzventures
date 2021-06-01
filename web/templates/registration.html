@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<div class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">NavBar</a>
+    </nav>
+</div>
+<div class="container">
+    <h1 class="text-center">Registration</h1>
+    {% if register %}
+    <h1>Registration Successful.</h1>
+
+    {% else %}
+
+    <form action="{% url 'reg' %}" method="post">
+        {% csrf_token %}
+        {{profile_form.as_p}}
+        <button class="btn-btn-success" type="submit">SUBMIT</button>
+    </form>
+
+    {% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width , initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+
+    <title>SimpleKeyRealty.</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header-hero-container">
+    <header>
+        <div class="flex container">
+            <a href="/" id="logo">SimpleKeyRealty.</a>
+            <nav>
+                <button class="hamburger-menu" id="nav-toggle">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+
+                </button>
+
+                <ul id="nav-menu">
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a class="active" href="{% url 'reg' %}">Registration</a></li>
+                    <li><a class="active" href="#properties">Properties</a></li>
+                    <li><a class="active" href="#agents">Agents</a></li>
+                    <li><a class="active" href="">Contact Us</a></li>
+                    <li id="close-flyout"><span class="fas fa-times"></span></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="fade"></div>
+        <div class="hero-text">
+            <h1>Buy and Sell Real Estate Properties</h1>
+            <p>Best Website designed for you to complete your Home Search.</p>
+        </div>
+    </section>
+</div>
+
+<section id="how-it-works">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="flex">
+            <div>
+                <span class="fas fa-home"></span>
+                <h4>Find a Property.</h4>
+                <p>Its Easy to Find your dream Property</p>
+            </div>
+
+            <div>
+                <span class="fas fa-dollar-sign"></span>
+                <h4>Buy a Property</h4>
+                <p>Search Your Peroperty Here</p>
+            </div>
+
+            <div>
+                <span class="fas fa-chart-line"></span>
+                <h4>Investing</h4>
+                <p>Start Investing with new Projects You Like.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
